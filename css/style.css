@@ -1,0 +1,42 @@
+/* body * {
+    border: 1px solid black;
+} */
+/* Selection par type de balise */
+body {
+    background-color: gainsboro;
+    /* border:1px solid red; */
+}
+/* Selection par heritage */
+#main-nav ul li button {
+    background-color: #6C757D;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    /* line-height: 20em; */
+    margin: 10px 20px 10px 20px;
+    padding: 15px;
+    border-radius: 8px;
+    border: 0;
+}
+#main-nav ul li {
+    list-style: none;
+    float: left;
+}
+#main-nav ul:after {
+    /* N'accepte pas d'élément flottant à droite et à gauche */
+    content:"";
+    clear: both;
+    display: block;
+}
+/* Pseudo class */
+button:hover {
+    cursor: pointer;
+}
+#main-nav button:before {
+    content: ">";
+    padding-right: 10px;
+
+}
+/* h2 {
+    /* N'accepte pas d'élément flottant à droite et à gauche */
+    /* clear: both; */
+/* } */ 
